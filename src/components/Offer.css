@@ -1,0 +1,53 @@
+.offer-section {
+  background-color: #173f8a;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.offer-heading {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+}
+
+.offer-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.offer-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.offer-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00e0ff;
+}
+
+.offer-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.offer-item p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}

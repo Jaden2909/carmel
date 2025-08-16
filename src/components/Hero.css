@@ -1,0 +1,115 @@
+/* full-screen hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* gradient overlay - stronger at top to help nav contrast */
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(6,18,30,0.65) 0%, rgba(6,18,30,0.5) 30%, rgba(6,18,30,0.38) 100%);
+  z-index: 2;
+}
+
+/* center content */
+.hero-center {
+  position: relative;
+  z-index: 6;
+  text-align: center;
+  width: 100%;
+  max-width: 980px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+/* logo wrapper - Fallback behavior:
+   - If you have a transparent logo (recommended: logo-transparent.png or SVG), it will sit cleanly.
+   - If your logo has a white rectangle baked in, consider replacing it with a transparent asset.
+   - As a visual fallback we add a subtle blurred backdrop so it blends better on dark image. */
+.hero-logo-wrap {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 6px;
+ -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  margin-bottom: 18px;
+}
+
+/* Actual logo image */
+.hero-logo {
+  display: block;
+  max-height: 804px; /* adjust to taste */
+  width: auto;
+  object-fit: contain;
+}
+
+/* main heading - responsive and bold */
+.hero-title {
+  font-size: clamp(2.2rem, 6.4vw, 4rem);
+  font-weight: 500;
+  line-height: 1.08;
+  margin: 6px 0 14px;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.65);
+}
+
+/* sub text */
+.hero-sub {
+  font-size: clamp(1rem, 2.1vw, 1.25rem);
+  margin-bottom: 28px;
+  opacity: 0.95;
+  font-weight: 400;
+}
+
+/* CTA */
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: background 220ms ease, transform 160ms ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.14);
+}
+
+/* small screens */
+@media (max-width: 720px) {
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.6rem); }
+  .hero-logo { max-height: 604px; }
+  .hero-logo-wrap { padding: 6px; }
+  .hero-sub { font-size: 0.98rem; }
+  .nav-inner { padding: 12px 14px; }
+}

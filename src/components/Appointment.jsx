@@ -25,9 +25,6 @@ const Appointment = () => {
             <FaInstagram /> @carmelmedicalanddentalcare
           </li>
         </ul>
-        <p className="note">
-          Parking for specially-abled. Assistance dogs welcome.
-        </p>
       </div>
       <div className="appointment-image" data-aos="fade-left">
         <img src={smileImg} alt="Smiling woman"

@@ -13,7 +13,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Offer.css";
 
-// Import local images from assets folder
+// Import local service images
 import service1 from "../assets/service1.jpg";
 import service2 from "../assets/service2.jpg";
 import service3 from "../assets/service3.jpg";
@@ -23,11 +23,42 @@ import service6 from "../assets/service6.jpg";
 import service7 from "../assets/service7.jpg";
 import service9 from "../assets/service9.jpg";
 
+// Import local gallery images
+import gallery1 from "../assets/gallery1.jpg";
+import gallery2 from "../assets/gallery2.jpg";
+import gallery3 from "../assets/gallery3.jpg";
+import gallery4 from "../assets/gallery4.jpg";
+import gallery5 from "../assets/gallery5.jpg";
+import gallery6 from "../assets/gallery6.jpg";
+
 function Offer() {
   const [showGallery, setShowGallery] = useState(false);
 
+  // Function to open gallery if hash is #gallery
+  const checkHashAndOpen = () => {
+    if (window.location.hash === "#gallery") {
+      setShowGallery(true);
+      // Optionally clear hash so it doesn’t retrigger
+      window.history.replaceState(null, null, " ");
+    }
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
+
+    // On mount, check hash
+    checkHashAndOpen();
+
+    // Listen for hash changes
+    const onHashChange = () => {
+      checkHashAndOpen();
+    };
+    window.addEventListener("hashchange", onHashChange);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("hashchange", onHashChange);
+    };
   }, []);
 
   const services = [
@@ -90,12 +121,12 @@ function Offer() {
   ];
 
   const galleryImages = [
-    "https://picsum.photos/id/1011/800/800",
-    "https://picsum.photos/id/1015/800/800",
-    "https://picsum.photos/id/1025/800/800",
-    "https://picsum.photos/id/1035/800/800",
-    "https://picsum.photos/id/1045/800/800",
-    "https://picsum.photos/id/1055/800/800",
+    gallery1,
+    gallery2,
+    gallery3,
+    gallery4,
+    gallery5,
+    gallery6,
   ];
 
   return (
@@ -112,13 +143,11 @@ function Offer() {
             style={{ transitionDelay: `${idx * 100}ms` }}
           >
             <div className="offer-inner">
-              {/* Front Side */}
               <div className="offer-front">
                 <div className="offer-icon">{service.icon}</div>
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
               </div>
-              {/* Back Side */}
               <div className="offer-back">
                 <img src={service.img} alt={service.title} />
               </div>
@@ -134,14 +163,8 @@ function Offer() {
 
       {/* Fullscreen Gallery */}
       {showGallery && (
-        <div
-          className="gallery-overlay"
-          onClick={() => setShowGallery(false)}
-        >
-          <div
-            className="gallery-content"
-            onClick={(e) => e.stopPropagation()}
-          >
+        <div className="gallery-overlay" onClick={() => setShowGallery(false)}>
+          <div className="gallery-content" onClick={(e) => e.stopPropagation()}>
             <button
               className="gallery-close"
               onClick={() => setShowGallery(false)}

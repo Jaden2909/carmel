@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cta.css';
-import ctaBg from '../assets/cta-bg.jpg'; // replace with your background image path
+import ctaBg from '../assets/cta-bg.jpeg';
 
 function Cta() {
   return (
@@ -14,11 +14,11 @@ function Cta() {
             Regular <span>Cleaning</span> Routine
           </h2>
           <p>
-            Highlight specific services or products that are unique to your business here. 
-            It can be your flagship product or a service that you've pioneered. 
-            Give it room to shine here.
+            Keep your smile fresh, bright, and healthy with our professional dental cleaning sessions. 
+            Regular scaling and polishing help prevent cavities, gum disease, and bad breath. 
+            Invest in your oral health today — your future self will thank you.
           </p>
-          <a href="#packages" className="cta-link">
+          <a href="#contact" className="cta-link">
             Avail Package <span>→</span>
           </a>
         </div>

@@ -28,11 +28,13 @@ function Navbar() {
       <div className="navbar-container">
         {scrolled && (
           <div className="navbar-logo">
-            <img src={logo} alt="Logo" />
+            <a href="#home">
+              <img src={logo} alt="Logo" />
+            </a>
           </div>
         )}
         <ul className="navbar-links">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#team">Our Team</a></li> {/* Changed from Home */}
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>

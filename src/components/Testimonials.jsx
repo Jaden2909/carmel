@@ -5,16 +5,16 @@ import { FaQuoteLeft } from 'react-icons/fa';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Sharman Grover',
-      text: "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+      name: 'Venkatesh',
+      text: "Very caring and my dental follow up appointments are fixed on time according to my availability. Very welcoming environment."
     },
     {
-      name: 'Natasha Lamba',
-      text: "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+      name: 'Noel',
+      text: "Exceptional service. Dentists treated with care and the whole braces procedure was done painlessly. Very satisfied with results and procedure."
     },
     {
-      name: 'Jayant Daya',
-      text: "Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+      name: 'George',
+      text: "This dental clinic is truly a blessing, recently got my root canal done, impeccable job. Also brought my siblings. Highly recommended."
     }
   ];
 

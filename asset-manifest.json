@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/carmel/static/css/main.8a26d086.css",
-    "main.js": "/carmel/static/js/main.7a1c6f06.js",
+    "main.css": "/carmel/static/css/main.acb61c08.css",
+    "main.js": "/carmel/static/js/main.854de1fb.js",
     "static/media/smileVideo.mp4": "/carmel/static/media/smileVideo.d5ef73542d7eb1d3083e.mp4",
     "static/media/doctor14.png": "/carmel/static/media/doctor14.b86503a57aabb831c06d.png",
     "static/media/doctor13.png": "/carmel/static/media/doctor13.54827cadf0bb1d214c70.png",
@@ -11,18 +11,24 @@
     "static/media/doctor3.png": "/carmel/static/media/doctor3.ac2f68ce09522fbff603.png",
     "static/media/doctor12.png": "/carmel/static/media/doctor12.fb14b6bcaa0e69ccd6ed.png",
     "static/media/doctor2.png": "/carmel/static/media/doctor2.fa765817ec7519d53656.png",
-    "static/media/cta-bg.jpg": "/carmel/static/media/cta-bg.8be16ace2de5051c4f94.jpg",
     "static/media/doctor11.png": "/carmel/static/media/doctor11.4770dc8be984dca9d33f.png",
+    "static/media/appointment-image.jpg": "/carmel/static/media/appointment-image.f1262b8fecaf7897370a.jpg",
+    "static/media/cta-bg.jpeg": "/carmel/static/media/cta-bg.e6d87f2bdd9e8bb7427d.jpeg",
     "static/media/doctor5.png": "/carmel/static/media/doctor5.be384d09b42dbe75356b.png",
     "static/media/doctor6.png": "/carmel/static/media/doctor6.9ebefde58ebe5a4fa1bb.png",
     "static/media/doctor4.png": "/carmel/static/media/doctor4.cbd2bbd856b25373ef6e.png",
+    "static/media/gallery3.jpg": "/carmel/static/media/gallery3.d9597a53ff4a7023dff0.jpg",
     "static/media/doctor10.png": "/carmel/static/media/doctor10.2b91ff2688b9c9b11075.png",
     "static/media/doctor8.png": "/carmel/static/media/doctor8.85ecf9fcddf6fbda0152.png",
+    "static/media/gallery2.jpg": "/carmel/static/media/gallery2.5f0b510d75c390880e2c.jpg",
+    "static/media/gallery1.jpg": "/carmel/static/media/gallery1.f77a5a4b90996eef54b4.jpg",
     "static/media/doctor7.png": "/carmel/static/media/doctor7.b8d1c96c7c3f4425bca2.png",
-    "static/media/appointment-image.jpg": "/carmel/static/media/appointment-image.12282f3621320e8650fa.jpg",
+    "static/media/gallery4.jpg": "/carmel/static/media/gallery4.9e807afe710dfb33d725.jpg",
+    "static/media/gallery5.jpg": "/carmel/static/media/gallery5.2d51a3ac90804b00fc39.jpg",
     "static/media/service6.jpg": "/carmel/static/media/service6.7e9e008c58b55198a560.jpg",
     "static/media/service3.jpg": "/carmel/static/media/service3.f1474b6d3bb03da63144.jpg",
     "static/media/service5.jpg": "/carmel/static/media/service5.e5afe38027258c446815.jpg",
+    "static/media/gallery6.jpg": "/carmel/static/media/gallery6.82c675f2f746a248c5ca.jpg",
     "static/media/carmel.jpg": "/carmel/static/media/carmel.90c43ededa4c00c12444.jpg",
     "static/media/service7.jpg": "/carmel/static/media/service7.5b2ae8abdc40793a5c06.jpg",
     "static/media/service9.jpg": "/carmel/static/media/service9.13106eceef60c0663686.jpg",
@@ -31,11 +37,11 @@
     "static/media/service2.jpg": "/carmel/static/media/service2.2630ff904c718fad1623.jpg",
     "static/media/logo-navbar.png": "/carmel/static/media/logo-navbar.29cff4da3fd909467f79.png",
     "index.html": "/carmel/index.html",
-    "main.8a26d086.css.map": "/carmel/static/css/main.8a26d086.css.map",
-    "main.7a1c6f06.js.map": "/carmel/static/js/main.7a1c6f06.js.map"
+    "main.acb61c08.css.map": "/carmel/static/css/main.acb61c08.css.map",
+    "main.854de1fb.js.map": "/carmel/static/js/main.854de1fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a26d086.css",
-    "static/js/main.7a1c6f06.js"
+    "static/css/main.acb61c08.css",
+    "static/js/main.854de1fb.js"
   ]
 }

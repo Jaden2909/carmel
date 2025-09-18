@@ -40,7 +40,7 @@
 .navbar-links li {
   font-weight: bold;
   cursor: pointer;
-  color: white; /* White in hero */
+  color: black; /* White in hero */
 }
 
 .navbar-links li a {

@@ -1,12 +1,11 @@
 .about-section {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh; /* full screen height on desktop */
+  background-color: rgb(234, 234, 234);
 }
 
 .about-text {
   flex: 1 1 50%;
-  background-color: #fdfdfd;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,34 +37,52 @@
 
 .about-image-container {
   flex: 1 1 50%;
-  height: 100%;
-}
-
-.about-image {
+  display: flex;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  overflow: hidden;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+.about-video {
+  width: 100%;
+  height: auto; /* scales proportionally */
+  display: block;
+  object-fit: cover;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
   .about-section {
-    flex-direction: column;
-    height: auto; /* allow content height on mobile */
-  }
-
-  .about-image-container {
-    flex: 1 1 100%;
-    height: auto; /* let image size naturally */
-  }
-
-  .about-image {
-    height: auto; /* no forced height, scales proportionally */
+    flex-direction: column; /* stack text above video */
   }
 
   .about-text {
-    flex: 1 1 100%;
+    flex: 1 1 auto;
     padding: 20px;
+  }
+
+  .about-image-container {
+    flex: 1 1 auto;
+    width: 100%;
+    max-height: 650px; /* height on tablet */
+  }
+
+  .about-video {
+    width: 100%;
+    height: 100%; /* fills container, cropped vertically if needed */
+    object-fit: cover;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .about-image-container {
+    width: 100%;
+    max-height: none; /* no restriction, full width scaling */
+  }
+
+  .about-video {
+    width: 100%;
+    height: auto; /* scales naturally with screen width */
+    object-fit: contain; /* show full video without cropping */
   }
 }

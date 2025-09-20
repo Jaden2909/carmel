@@ -49,8 +49,7 @@
 }
 
 .about-video {
-  width: auto;         /* width adjusts automatically */
-  height: 100%;        /* fill container height */
+  width: 100%;            /* fill container height */
   object-fit: contain; /* scale proportionally without cropping */
   border-radius: 0;
 }

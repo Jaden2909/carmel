@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/carmel/static/css/main.3ff81b2c.css",
+    "main.css": "/carmel/static/css/main.aa5f1e62.css",
     "main.js": "/carmel/static/js/main.854de1fb.js",
     "static/media/smileVideo.mp4": "/carmel/static/media/smileVideo.d5ef73542d7eb1d3083e.mp4",
     "static/media/doctor14.png": "/carmel/static/media/doctor14.b86503a57aabb831c06d.png",
@@ -37,11 +37,11 @@
     "static/media/service2.jpg": "/carmel/static/media/service2.2630ff904c718fad1623.jpg",
     "static/media/logo-navbar.png": "/carmel/static/media/logo-navbar.29cff4da3fd909467f79.png",
     "index.html": "/carmel/index.html",
-    "main.3ff81b2c.css.map": "/carmel/static/css/main.3ff81b2c.css.map",
+    "main.aa5f1e62.css.map": "/carmel/static/css/main.aa5f1e62.css.map",
     "main.854de1fb.js.map": "/carmel/static/js/main.854de1fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ff81b2c.css",
+    "static/css/main.aa5f1e62.css",
     "static/js/main.854de1fb.js"
   ]
 }

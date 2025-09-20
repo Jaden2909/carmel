@@ -2,7 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(234, 234, 234);
-  align-items: center; /* desktop: vertically center */
+  align-items: stretch; 
+  height: 100vh;        /* section fits viewport height */
+  overflow: hidden;     
 }
 
 .about-text {
@@ -10,7 +12,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  padding: 40px; 
 }
 
 .about-text h2 {
@@ -40,43 +42,41 @@
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: center; /* center video */
+  overflow: hidden;
+  padding: 0;
+  height: 100%;        
 }
 
 .about-video {
-  width: 100%;
-  height: auto;          /* desktop: proportional */
-  max-height: 400px;     /* not touching top/bottom */
-  object-fit: contain;   /* no cropping */
-  border-radius: 10px;
+  width: auto;         /* width adjusts automatically */
+  height: 100%;        /* fill container height */
+  object-fit: contain; /* scale proportionally without cropping */
+  border-radius: 0;
 }
 
 /* Tablet view */
 @media (max-width: 1024px) {
   .about-section {
-    flex-direction: column; 
-    align-items: stretch;   /* video fills section vertically */
+    flex-direction: column;
+    align-items: stretch;
     text-align: center;
+    height: auto;        /* revert to natural height */
   }
 
   .about-text {
-    flex: 1 1 auto;
     padding: 20px;
   }
 
   .about-image-container {
-    flex: 1 1 auto;
     width: 100%;
-    padding: 0;
-    max-height: 650px;     /* set section height */
+    max-height: none;    /* remove forced height */
   }
 
   .about-video {
-    width: 100%;
-    height: 100%;          /* touches top & bottom */
-    object-fit: contain;   /* no cropping */
-    border-radius: 0;
+    width: 100%;         /* as in original source */
+    height: auto;
+    object-fit: contain;
   }
 }
 
@@ -84,6 +84,7 @@
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
+    height: auto;        /* natural height */
   }
 
   .about-image-container {
@@ -93,8 +94,7 @@
 
   .about-video {
     width: 100%;
-    height: auto;          /* natural scaling */
-    object-fit: contain;   /* no cropping */
-    border-radius: 0;
+    height: auto;        /* scale naturally */
+    object-fit: contain;
   }
 }

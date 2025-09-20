@@ -1,8 +1,34 @@
+/* Reset and global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Raleway:wght@300;500&display=swap");
+
+/* Global font styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
+  background-color: #fff; /* keep or remove if your sections define bg */
+  line-height: 1.6;
+}
+
+/* Headings use serif (like logo) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", "Times New Roman", serif;
+  font-weight: 700;
+  /* no forced color */
+}
+
+/* Paragraphs, spans, links use clean sans-serif */
+p, span, a, li {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Optional: make headings look closer to logo */
+h1 {
+  letter-spacing: 1px;
 }

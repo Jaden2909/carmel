@@ -2,7 +2,7 @@
   "name": "dental-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Jaden2909.github.io/carmel",
+ "homepage": "https://carmelcare.in",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
